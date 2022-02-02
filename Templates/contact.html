@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TR Vardište Contact</title>
+</head>
+<body>
+{% block content %}
+<h1>Kontakti su tu.</h1>
+
+
+<ul>
+    <li> item</li>
+    <li> item2 </li>
+</ul>
+
+
+<p>
+    {{ name }}, {{ number }}
+  <ol>
+{% for i in list_contacts %}
+      <li> {{ i }}</li>
+{% endfor %}
+   </ol>
+</p>
+
+{% endblock %}
+</body>
+</html>
